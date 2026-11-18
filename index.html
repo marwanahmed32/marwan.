@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FlowCraft — مكتب هندسة الأتمتة والحلول التقنية</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&family=El+Messiri:wght@500;600;700&display=swap">
+<style>
+:root{--bg:#09090a;--sf:#111113;--cd:#161618;--gd:#d4af37;--gl:#f1d98b;--gdk:#8a6d1c;--ln:rgba(212,175,55,.22);--tx:#ece6d6;--mu:#a39c8a;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--tx);font:400 16px/1.9 "Tajawal",Tahoma,sans-serif}
+h1,h2,h3,.lg{font-family:"El Messiri","Tajawal",Tahoma,sans-serif;margin:0;font-weight:700}
+.w{max-width:1100px;margin:auto;padding:0 20px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(9,9,10,.96);border-bottom:1px solid var(--ln)}
+nav .w{display:flex;align-items:center;justify-content:space-between;gap:14px;height:60px}
+.lg{font-size:1.4rem;color:var(--gd);letter-spacing:1px}
+.nl{display:flex;gap:18px;overflow-x:auto;white-space:nowrap;font-size:.88rem}
+.nl a{color:var(--mu);text-decoration:none}.nl a:hover{color:var(--gl)}
+.wa{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--gl),var(--gd) 55%,var(--gdk));color:#1a1405;font-weight:700;text-decoration:none;padding:9px 20px;border-radius:6px;white-space:nowrap;font-size:.92rem}
+.wa:hover{filter:brightness(1.08)}
+.hero{padding:90px 0 70px;text-align:center;background:radial-gradient(ellipse at 50% 0,rgba(212,175,55,.14),transparent 60%);border-bottom:1px solid var(--ln)}
+.orn{display:flex;align-items:center;justify-content:center;gap:12px;color:var(--gd);font-size:.85rem;letter-spacing:2px;margin-bottom:18px}
+.orn:before,.orn:after{content:"";width:54px;height:1px;background:var(--gd)}
+.hero h1{font-size:clamp(2rem,5.5vw,3.5rem);line-height:1.55;color:var(--gl);max-width:820px;margin:0 auto 18px}
+.hero p{max-width:640px;margin:0 auto 28px;color:var(--mu)}
+.sv{display:grid;grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:14px;margin-top:56px;text-align:right}
+.sv a{display:block;text-decoration:none;color:inherit;background:var(--cd);border:1px solid var(--ln);border-radius:10px;padding:20px;transition:.25s}
+.sv a:hover{border-color:var(--gd);background:var(--sf)}
+.sv b{font:700 1.7rem "El Messiri",sans-serif;color:var(--gd);display:block;line-height:1.2}
+.sv h3{font-size:1.05rem;margin:6px 0 2px;color:var(--gl)}.sv span{font-size:.85rem;color:var(--mu)}
+.sec{padding:70px 0 20px}
+.hd{border:1px solid var(--ln);border-radius:12px;padding:30px 28px;background:linear-gradient(120deg,var(--sf),var(--bg));display:flex;gap:24px;align-items:center;margin-bottom:26px;position:relative;overflow:hidden}
+.hd:before{content:"";position:absolute;inset-block:0;inset-inline-start:0;width:4px;background:linear-gradient(var(--gl),var(--gdk))}
+.hd .n{font:700 3.4rem/1 "El Messiri",sans-serif;color:transparent;-webkit-text-stroke:1.3px var(--gd)}
+.hd h2{font-size:1.9rem;color:var(--gl)}.hd p{margin:4px 0 0;color:var(--mu);max-width:700px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:18px;align-items:start}
+.pc{background:var(--cd);border:1px solid var(--ln);border-radius:12px;padding:22px;transition:.25s}
+.pc:hover{border-color:var(--gd)}
+.pc h3{font-size:1.15rem;color:var(--gl);margin-bottom:6px}
+.pc>p{margin:0 0 12px;color:var(--mu);font-size:.94rem}
+.tg{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+.tg i{font-style:normal;font-size:.76rem;color:var(--gd);border:1px solid var(--ln);padding:1px 10px;border-radius:20px}
+details{border-top:1px solid var(--ln);padding-top:12px}
+summary{cursor:pointer;color:var(--gd);font-weight:600;list-style:none;display:flex;justify-content:space-between;font-size:.94rem}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";font-size:1.3rem;line-height:1}details[open] summary:after{content:"−"}
+.dt{margin:12px 0 14px;padding:0;list-style:none;font-size:.92rem}
+.dt li{padding:6px 0;border-bottom:1px dashed var(--ln);color:var(--tx)}
+.dt li b{color:var(--gd);font-weight:600;margin-inline-end:6px}
+.ask{display:block;text-align:center;border:1px solid var(--gd);color:var(--gl);text-decoration:none;padding:8px;border-radius:6px;font-weight:600;font-size:.9rem}
+.ask:hover{background:var(--gd);color:#1a1405}
+.how{padding:70px 0 20px}
+.st{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:22px}
+.st div{background:var(--cd);border:1px solid var(--ln);border-radius:10px;padding:20px}
+.st b{font:700 1.6rem "El Messiri",sans-serif;color:var(--gd)}.st h3{font-size:1.05rem;color:var(--gl)}.st p{margin:4px 0 0;color:var(--mu);font-size:.9rem;line-height:1.8}
+.ct{margin-top:70px;padding:70px 0;text-align:center;border-top:1px solid var(--ln);background:radial-gradient(ellipse at 50% 100%,rgba(212,175,55,.14),transparent 65%)}
+.ct h2{font-size:2.1rem;color:var(--gl);margin-bottom:10px}.ct p{color:var(--mu);margin:0 auto 14px;max-width:520px}
+.ph{font:700 1.7rem "El Messiri",sans-serif;color:var(--gd);direction:ltr;margin-bottom:20px}
+footer{text-align:center;color:var(--mu);font-size:.82rem;padding:20px 0 90px;border-top:1px solid var(--ln)}
+.fab{position:fixed;inset-inline-start:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--gl),var(--gd) 55%,var(--gdk));display:grid;place-items:center;box-shadow:0 6px 22px rgba(0,0,0,.6)}
+.fab svg{width:28px;height:28px;fill:#1a1405}
+@media(max-width:700px){.hd{flex-direction:column;align-items:flex-start;gap:8px;padding:22px}.hd .n{font-size:2.6rem}.nav-wa{display:none}}
+</style>
+</head>
+<body>
+<nav><div class="w"><div class="lg">FLOWCRAFT</div>
+<div class="nl"><a href="#web">المواقع</a><a href="#auto">الأتمتة</a><a href="#apps">التطبيقات</a><a href="#data">البيانات</a><a href="#ps4">PS4</a><a href="#how">آلية العمل</a></div>
+<a class="wa nav-wa" href="https://wa.me/201026024266" target="_blank" rel="noopener">واتساب</a></div></nav>
+
+<header class="hero"><div class="w">
+<div class="orn">FLOWCRAFT · القاهرة</div>
+<h1>حلول تقنية متكاملة بمستوى يليق بنشاطك</h1>
+<p>مكتب متخصص في المواقع الاحترافية، وأتمتة الأعمال والبوتات الذكية، وتطوير التطبيقات، وتحليل البيانات، وخدمات أجهزة PlayStation 4.</p>
+<a class="wa" href="https://wa.me/201026024266" target="_blank" rel="noopener">تواصل معنا على واتساب</a>
+<div class="sv">
+<a href="#web"><b>01</b><h3>مواقع احترافية</h3><span>متجاوبة وبتصميم راقٍ</span></a>
+<a href="#auto"><b>02</b><h3>الأتمتة والبوتات</h3><span>n8n وتيليجرام وذكاء اصطناعي</span></a>
+<a href="#apps"><b>03</b><h3>تطوير التطبيقات</h3><span>موبايل وويب وسطح مكتب</span></a>
+<a href="#data"><b>04</b><h3>تحليل البيانات</h3><span>مؤشرات وتقارير وتوصيات</span></a>
+<a href="#ps4"><b>05</b><h3>خدمات PS4</h3><span>تعديل وتحميل ألعاب</span></a>
+</div></div></header>
+
+<main class="w" id="root"></main>
+
+<div class="w how" id="how">
+<div class="hd" style="margin-bottom:0"><div class="n">06</div><div><h2>كيف نعمل معك</h2><p>أربع خطوات واضحة من أول رسالة حتى التسليم.</p></div></div>
+<div class="st">
+<div><b>01</b><h3>نسمع المشكلة</h3><p>نفهم نشاطك وأين يضيع وقتك.</p></div>
+<div><b>02</b><h3>نقترح الحل</h3><p>خطة بنطاق ومدة وتكلفة واضحة قبل التنفيذ.</p></div>
+<div><b>03</b><h3>نبني ونجرّب</h3><p>نسلّم على مراحل وتجرّب النظام معنا.</p></div>
+<div><b>04</b><h3>نسلّم ونتابع</h3><p>تدريب على الاستخدام ودعم بعد التسليم.</p></div>
+</div></div>
+
+<section class="ct" id="contact"><div class="w">
+<h2>جاهزون لبدء مشروعك</h2>
+<p>راسلنا مباشرة على واتساب واحكِ لنا فكرتك، وسنرد عليك بالحل المناسب.</p>
+<div class="ph">01026024266</div>
+<a class="wa" href="https://wa.me/201026024266" target="_blank" rel="noopener">ابدأ المحادثة على واتساب</a>
+</div></section>
+<footer>© 2026 FlowCraft — القاهرة، مصر</footer>
+
+<a class="fab" href="https://wa.me/201026024266" target="_blank" rel="noopener" aria-label="واتساب"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.300 1.200-1.800 1.200-.5.1-1 .2-3.300-.7-2.800-1.100-4.600-4-4.700-4.200-.1-.2-1.100-1.500-1.100-2.800s.7-2 1-2.300c.2-.3.500-.3.700-.3h.5c.2 0 .4 0 .6.500l.8 1.900c.1.200.1.300 0 .5l-.3.500-.4.400c-.1.200-.3.300-.1.600.2.300.8 1.300 1.700 2.100 1.100 1 2.100 1.300 2.400 1.400.3.100.4.100.6-.1l.8-1c.2-.3.400-.2.600-.1l1.800.9c.3.100.5.200.5.300.1.200.1.800-.1 1.400z"/></svg></a>
+
+<script>
+var D=[
+{id:"web",n:"01",t:"المواقع الاحترافية",s:"مواقع متجاوبة مع كل الشاشات بتصميم يعكس هوية النشاط وتجربة استخدام سلسة.",p:[
+{t:"FlowCraft AI — تحليل ملفات Excel",s:"صفحة عربية داكنة لرفع ملف Excel وطلب نصي والحصول على تقرير ذكي.",g:["n8n Webhook","Excel","AI"],d:[["الفكرة","يرفع المستخدم ملف Excel ويكتب طلبه، فيصل إلى Webhook على n8n."],["المخرجات","مؤشرات أداء وتقرير بالذكاء الاصطناعي وتوصيات ورابط لوحة بيانات."],["الاستخدام","تحليل بيانات المطاعم."]]},
+{t:"Vibe Coaching",s:"منصة تدريب حياتي بتصميم داكن فاخر مع اختبار تفاعلي.",g:["HTML","Tailwind","n8n"],d:[["الصفحات","الرئيسية، اختبار Vibe Quiz، البرامج والأسعار."],["الحجز","حجز الجلسات عبر n8n Webhooks."],["العميل","لوحة عميل تجريبية توضح تجربة الاشتراك."]]},
+{t:"موقع مكتب المستشار أحمد سليمان",s:"موقع كامل لمكتب استشاري قانوني.",g:["موقع شركات","قانوني"],d:[["الهدف","إظهار خبرة المكتب الطويلة وتنوع القضايا التي يتولاها."],["الامتداد","مرتبط بتطبيق Flutter لإدارة القضايا."]]},
+{t:"منصة Counsel Story",s:"منصة Legal Tech ومحتوى تسويقي عربي.",g:["Legal Tech","محتوى","سوشيال ميديا"],d:[["ما نفذناه","محتوى تسويقي عربي ومواد سوشيال ميديا للمنصة."],["الأهمية","من أول مشاريعنا المكتملة."]]},
+{t:"موقع FlowCraft",s:"موقع عربي RTL بتصميم Glassmorphism.",g:["RTL","Glassmorphism","موشن"],d:[["التصميم","ألوان التيل والبنفسجي."],["المحتوى","فيديو موشن لتيك توك، وإعلان خمسات احترافي وباقات أسعار متدرجة."]]}]},
+{id:"auto",n:"02",t:"الأتمتة والبوتات الذكية",s:"أنظمة تعمل تلقائيًا على مدار الساعة: طلبات وحجوزات وردود وتقارير.",p:[
+{t:"نظام أتمتة مطعم / كافيه",s:"بوت تيليجرام يدير الطلبات من الاستقبال حتى التقييم.",g:["Telegram","n8n","Database"],d:[["الطلبات","استقبال الطلب وتسجيله وإشعار المطبخ."],["الحالة","أزرار لتحديث حالة الطلب."],["التقييمات","شكر وكود خصم للتقييم العالي، وتنبيه فوري للإدارة للتقييم المنخفض."]]},
+{t:"أتمتة حجز الفنادق",s:"حجز آلي بدون تدخل يدوي.",g:["n8n"],d:[["العملية","استقبال طلبات الحجز وتأكيدها تلقائيًا."]]},
+{t:"شات بوت لمعارض السيارات",s:"يرد على العملاء ويحجز المواعيد.",g:["Chatbot","حجوزات"],d:[["الردود","الرد على استفسارات العملاء تلقائيًا."],["الحجز","تسجيل المواعيد مباشرة في قاعدة البيانات للمتابعة."]]},
+{t:"بوتات العقارات والمحاسبة",s:"بوتات ذكية بالنص والصوت.",g:["Gemini","Whisper","Airtable"],d:[["العقارات","بوت Sara مع حجز عبر Airtable."],["المحاسبة","مساعد يعتمد على Gemini وWhisper."]]},
+{t:"أنظمة قانونية ذكية",s:"تذكيرات ومعالجة مستندات ومراقبة عقود.",g:["OCR","n8n","AI"],d:[["البوتات","بوتات قانونية بتذكيرات."],["OCR","خط من 23 عقدة للمستندات القانونية."],["Contract Watchdog","أداة لمتابعة العقود."]]}]},
+{id:"apps",n:"03",t:"تطوير التطبيقات",s:"تطبيقات موبايل وويب وسطح مكتب حسب احتياج النشاط.",p:[
+{t:"قضيتي — Qadyati",s:"تطبيق PWA للمحامين المصريين وأداة تسويق للمكاتب.",g:["PWA","Apps Script","Sheets"],d:[["الفكرة","إدارة قضايا تحوّلت إلى «سوّق لمكتبك» لتسويق مكاتب المحاماة."],["التقنية","Google Apps Script وGoogle Sheets."],["الدفع والنشر","دفع يدوي عبر فودافون كاش أو إنستا باي، والهدف النشر على Google Play."]]},
+{t:"تطبيق إدارة القضايا",s:"هيكل تطبيق Flutter لمكتب المستشار.",g:["Flutter"],d:[["الدور","إدارة القضايا، ويكمّل موقع المكتب."]]},
+{t:"Mega Milk",s:"برنامج سطح مكتب لإدارة محل ألبان.",g:["Python","Tkinter","SQLite"],d:[["التقنية","واجهة Tkinter وقاعدة بيانات SQLite."]]}]},
+{id:"data",n:"04",t:"تحليل البيانات",s:"نحوّل البيانات الخام إلى مؤشرات أداء وتقارير وتوصيات تدعم القرار.",p:[
+{t:"تحليل بيانات ضخمة",s:"معارض سيارات وسوبر ماركت وشركة مياه معدنية.",g:["KPIs","تقارير","توصيات"],d:[["القطاعات","معارض سيارات، سوبر ماركت، شركة مياه معدنية."],["المخرجات","مؤشرات الأداء والتقارير والتوصيات لدعم قرارات الإدارة."]]},
+{t:"شات بوت لتحليل بيانات أي بيزنس",s:"اسأل في المحادثة واحصل على الأرقام فورًا.",g:["AI","Chatbot"],d:[["العمل","يربط بيانات النشاط ويجيب عنها ويحللها بالذكاء الاصطناعي."],["الفائدة","تقارير وأرقام فورية للمالك بمجرد السؤال."]]},
+{t:"مستخرج بيانات من المواقع",s:"Web Scraper يجمع البيانات وينظمها تلقائيًا.",g:["Scraping","Python"],d:[["الاستخدام","جمع المعلومات وتغذية قواعد البيانات والتقارير."]]}]},
+{id:"ps4",n:"05",t:"خدمات PlayStation 4",s:"تعديل الأجهزة وتجهيزها للألعاب، وتحميل المودات والتعريب وباقة العاب كامله.",p:[
+{t:"تعديل الجهاز (Jailbreak)",s:"تجهيز PS4 لتثبيت الألعاب وتشغيلها.",g:["Jailbreak"],d:[["الخدمة","تعديل جهاز PlayStation 4 لتثبيت الألعاب وتشغيلها."]]},
+{t:"تحميل الألعاب وتحسين الأداء",s:"تثبيت الألعاب مع رفع الفريمات.",g:["FPS Boost"],d:[["التعديلات","رفع عدد الفريمات (FPS) لتحسين الأداء."]]},
+{t:"تحميل مودات الألعاب",s:"تثبيت مودات وتعديلات تضيف محتوى وإمكانيات جديدة للعبة.",g:["Mods","PS4"],d:[["الخدمة","تحميل مودات الألعاب وتثبيتها على الجهاز المعدّل."],["الفائدة","تجربة لعب مختلفة وإضافات لا تتوفر في النسخة الأصلية."]]},
+{t:"تعريب الألعاب",s:"تشغيل الألعاب بواجهة ونصوص عربية.",g:["تعريب","Localization"],d:[["الخدمة","تعريب الألعاب لتفهم القصة والقوائم بسهولة."]]},
+{t:"باقة العاب كامله",s:"تحميل وتثبيت باقة العاب  تطلبها.",g:["تحميل","تثبيت"],d:[["الخدمة","تحميل وتثبيت باقة العاب كامله المتاحة حسب طلبك."],["الطلب","اكتب لنا اسم اللعبة على واتساب."]]}]}
+];
+var h="";
+D.forEach(function(s){
+h+='<section class="sec" id="'+s.id+'"><div class="hd"><div class="n">'+s.n+'</div><div><h2>'+s.t+'</h2><p>'+s.s+'</p></div></div><div class="grid">';
+s.p.forEach(function(p){
+var m=encodeURIComponent("مرحبًا FlowCraft، أريد خدمة مثل: "+p.t);
+h+='<article class="pc"><h3>'+p.t+'</h3><p>'+p.s+'</p><div class="tg">'+p.g.map(function(x){return"<i>"+x+"</i>"}).join("")+'</div><details><summary>تفاصيل المشروع</summary><ul class="dt">'+p.d.map(function(x){return"<li><b>"+x[0]+":</b>"+x[1]+"</li>"}).join("")+'</ul><a class="ask" href="https://wa.me/201026024266?text='+m+'" target="_blank" rel="noopener">اطلب مثله على واتساب</a></details></article>';
+});
+h+='</div></section>';
+});
+document.getElementById("root").innerHTML=h;
+</script>
+</body>
+</html>
