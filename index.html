@@ -60,9 +60,31 @@ footer{text-align:center;color:var(--mu);font-size:.82rem;padding:20px 0 90px;bo
 .fab{position:fixed;inset-inline-start:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--gl),var(--gd) 55%,var(--gdk));display:grid;place-items:center;box-shadow:0 6px 22px rgba(0,0,0,.6)}
 .fab svg{width:28px;height:28px;fill:#1a1405}
 @media(max-width:700px){.hd{flex-direction:column;align-items:flex-start;gap:8px;padding:22px}.hd .n{font-size:2.6rem}.nav-wa{display:none}}
+#intro{position:fixed;inset:0;z-index:100;display:grid;place-items:center;cursor:pointer;animation:iEnd 0s linear 4s forwards}
+#intro .ph1,#intro .ph2{position:absolute;left:0;right:0;height:50.5%;background:#09090a;animation:iOpen 1s cubic-bezier(.77,0,.18,1) 2.9s forwards}
+#intro .ph1{top:0;border-bottom:1px solid var(--gd)}#intro .ph2{bottom:0;--d:1;border-top:1px solid var(--gd)}
+#intro .ph2{animation-name:iOpen2}
+#intro .ic{position:relative;text-align:center;animation:iFade .5s ease 2.6s forwards;padding:0 16px}
+#intro .lt{direction:ltr;font:700 clamp(2.2rem,9vw,5rem)/1.2 "El Messiri",sans-serif;letter-spacing:.14em;color:#f4ecd8;text-shadow:0 0 28px rgba(212,175,55,.35);white-space:nowrap}
+#intro .lt span{display:inline-block;opacity:0;transform:translateY(46px) scale(.92);filter:blur(12px);animation:iLet .9s cubic-bezier(.2,.8,.2,1) forwards;animation-delay:calc(.45s + var(--i)*.08s)}
+#intro .ln{height:1px;width:0;margin:14px auto;background:linear-gradient(90deg,transparent,var(--gd),transparent);animation:iLine 1.3s cubic-bezier(.6,0,.2,1) .3s forwards}
+#intro .ln.b{animation-delay:.55s}
+#intro .tl{color:var(--gd);letter-spacing:1px;font-size:clamp(.9rem,3vw,1.15rem);opacity:0;transform:translateY(10px);animation:iTl .8s ease 1.7s forwards}
+#intro .sk{position:absolute;bottom:calc(24px + env(safe-area-inset-bottom,0px));inset-inline:0;text-align:center;color:var(--mu);font-size:.8rem;opacity:.7}
+@keyframes iLet{to{opacity:1;transform:none;filter:none}}
+@keyframes iLine{to{width:min(420px,78vw)}}
+@keyframes iTl{to{opacity:1;transform:none}}
+@keyframes iFade{to{opacity:0;transform:scale(1.04)}}
+@keyframes iOpen{to{transform:translateY(-101%)}}
+@keyframes iOpen2{to{transform:translateY(101%)}}
+@keyframes iEnd{to{visibility:hidden;pointer-events:none}}
+#intro.skip{display:none}
 </style>
 </head>
 <body>
+<div id="intro" aria-hidden="true"><div class="ph1"></div><div class="ph2"></div>
+<div class="ic"><div class="ln"></div><div class="lt"><span style="--i:0">F</span><span style="--i:1">L</span><span style="--i:2">O</span><span style="--i:3">W</span><span style="--i:4">C</span><span style="--i:5">R</span><span style="--i:6">A</span><span style="--i:7">F</span><span style="--i:8">T</span></div><div class="ln b"></div><div class="tl">هندسة الأتمتة والحلول التقنية</div></div>
+<div class="sk">اضغط للتخطي</div></div>
 <nav><div class="w"><div class="lg">FLOWCRAFT</div>
 <div class="nl"><a href="#web">المواقع</a><a href="#auto">الأتمتة</a><a href="#apps">التطبيقات</a><a href="#data">البيانات</a><a href="#ps4">PS4</a><a href="#how">آلية العمل</a></div>
 <a class="wa nav-wa" href="https://wa.me/201026024266" target="_blank" rel="noopener">واتساب</a></div></nav>
@@ -123,12 +145,12 @@ var D=[
 {t:"تحليل بيانات ضخمة",s:"معارض سيارات وسوبر ماركت وشركة مياه معدنية.",g:["KPIs","تقارير","توصيات"],d:[["القطاعات","معارض سيارات، سوبر ماركت، شركة مياه معدنية."],["المخرجات","مؤشرات الأداء والتقارير والتوصيات لدعم قرارات الإدارة."]]},
 {t:"شات بوت لتحليل بيانات أي بيزنس",s:"اسأل في المحادثة واحصل على الأرقام فورًا.",g:["AI","Chatbot"],d:[["العمل","يربط بيانات النشاط ويجيب عنها ويحللها بالذكاء الاصطناعي."],["الفائدة","تقارير وأرقام فورية للمالك بمجرد السؤال."]]},
 {t:"مستخرج بيانات من المواقع",s:"Web Scraper يجمع البيانات وينظمها تلقائيًا.",g:["Scraping","Python"],d:[["الاستخدام","جمع المعلومات وتغذية قواعد البيانات والتقارير."]]}]},
-{id:"ps4",n:"05",t:"خدمات PlayStation 4",s:"تعديل الأجهزة وتجهيزها للألعاب، وتحميل المودات والتعريب وباقة العاب كامله.",p:[
+{id:"ps4",n:"05",t:"خدمات PlayStation 4",s:"تعديل الأجهزة وتجهيزها للألعاب، وتحميل المودات والتعريب وباقي الألعاب.",p:[
 {t:"تعديل الجهاز (Jailbreak)",s:"تجهيز PS4 لتثبيت الألعاب وتشغيلها.",g:["Jailbreak"],d:[["الخدمة","تعديل جهاز PlayStation 4 لتثبيت الألعاب وتشغيلها."]]},
 {t:"تحميل الألعاب وتحسين الأداء",s:"تثبيت الألعاب مع رفع الفريمات.",g:["FPS Boost"],d:[["التعديلات","رفع عدد الفريمات (FPS) لتحسين الأداء."]]},
 {t:"تحميل مودات الألعاب",s:"تثبيت مودات وتعديلات تضيف محتوى وإمكانيات جديدة للعبة.",g:["Mods","PS4"],d:[["الخدمة","تحميل مودات الألعاب وتثبيتها على الجهاز المعدّل."],["الفائدة","تجربة لعب مختلفة وإضافات لا تتوفر في النسخة الأصلية."]]},
 {t:"تعريب الألعاب",s:"تشغيل الألعاب بواجهة ونصوص عربية.",g:["تعريب","Localization"],d:[["الخدمة","تعريب الألعاب لتفهم القصة والقوائم بسهولة."]]},
-{t:"باقة العاب كامله",s:"تحميل وتثبيت باقة العاب  تطلبها.",g:["تحميل","تثبيت"],d:[["الخدمة","تحميل وتثبيت باقة العاب كامله المتاحة حسب طلبك."],["الطلب","اكتب لنا اسم اللعبة على واتساب."]]}]}
+{t:"باقي الألعاب",s:"تحميل وتثبيت أي لعبة تطلبها.",g:["تحميل","تثبيت"],d:[["الخدمة","تحميل وتثبيت باقي الألعاب المتاحة حسب طلبك."],["الطلب","اكتب لنا اسم اللعبة على واتساب."]]}]}
 ];
 var h="";
 D.forEach(function(s){
@@ -140,6 +162,7 @@ h+='<article class="pc"><h3>'+p.t+'</h3><p>'+p.s+'</p><div class="tg">'+p.g.map(
 h+='</div></section>';
 });
 document.getElementById("root").innerHTML=h;
+(function(){var tpl=document.getElementById("intro").outerHTML;var t;function play(){var o=document.getElementById("intro");if(o)o.remove();document.body.insertAdjacentHTML("afterbegin",tpl);var i=document.getElementById("intro");var d=function(){clearTimeout(t);i.classList.add("skip");document.documentElement.style.overflow=""};document.documentElement.style.overflow="hidden";i.addEventListener("click",d);t=setTimeout(d,4200)}play();var l=document.querySelector(".lg");l.style.cursor="pointer";l.addEventListener("click",play)})();
 </script>
 </body>
 </html>
