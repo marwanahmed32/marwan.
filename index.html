@@ -81,6 +81,32 @@ footer{text-align:center;color:var(--mu);font-size:.82rem;padding:20px 0 90px;bo
 #intro.skip{display:none}
 .hd .art{margin-inline-start:auto;width:210px;flex:none;color:var(--gd)}.art svg{width:100%;height:auto;filter:drop-shadow(0 0 10px rgba(212,175,55,.35))}@media(max-width:700px){.hd .art{width:170px;margin:8px 0 0}}
 .pi{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:8px;border:1px solid var(--ln);margin-bottom:16px}.hd .art{width:300px}.art img{display:block;width:100%;border-radius:10px;border:1px solid var(--ln)}@media(max-width:700px){.hd .art{width:100%}}
+.hero{text-align:right}.hero .orn{justify-content:flex-start}.hero .orn:before{display:none}
+.hg{display:grid;grid-template-columns:1.02fr 1fr;gap:34px;align-items:center}
+.hg h1{font-size:clamp(1.9rem,4.4vw,3.1rem);line-height:1.5;margin:0 0 16px;max-width:none;color:var(--tx)}.hg h1 span{color:var(--gd)}
+.hg p{margin:0 0 24px;max-width:540px}
+.bt{display:flex;gap:12px;flex-wrap:wrap}.gh{display:inline-block;border:1px solid var(--gd);color:var(--gl);text-decoration:none;padding:9px 22px;border-radius:6px;font-weight:600;font-size:.92rem}.gh:hover{background:rgba(212,175,55,.12)}
+.tr{display:flex;gap:30px;margin-top:30px;padding-top:20px;border-top:1px solid var(--ln)}.tr b{display:block;font:700 1.6rem/1.2 "El Messiri",sans-serif;color:var(--gd)}.tr span{font-size:.82rem;color:var(--mu)}
+.vis{position:relative;height:450px}.gl{position:absolute;inset:-10% -5%;background:radial-gradient(circle at 50% 50%,rgba(212,175,55,.2),transparent 62%)}
+.vi{position:absolute;border-radius:14px;border:1px solid rgba(212,175,55,.45);box-shadow:0 24px 50px rgba(0,0,0,.65),0 0 40px rgba(212,175,55,.1);animation:fl 6s ease-in-out infinite;transform:rotate(var(--r))}
+.v1{width:76%;right:0;top:46px;--r:-2deg;z-index:1}.v2{width:46%;left:0;top:0;--r:3deg;z-index:2;animation-delay:-2s}.v3{width:40%;left:5%;bottom:6px;--r:-3deg;z-index:3;animation-delay:-4s}.v4{width:36%;right:3%;bottom:0;--r:2deg;z-index:3;animation-delay:-1s}
+.bd{position:absolute;z-index:5;background:rgba(9,9,10,.9);border:1px solid var(--gd);color:var(--gl);font-size:.78rem;padding:4px 12px;border-radius:20px}.b1{top:20px;right:6%}.b2{bottom:190px;left:44%}
+@keyframes fl{0%,100%{transform:translateY(0) rotate(var(--r))}50%{transform:translateY(-9px) rotate(var(--r))}}
+@media(max-width:860px){.hg{grid-template-columns:1fr}.vis{height:360px}.hero{padding-top:56px}}
+@media (prefers-reduced-motion:reduce){.vi{animation:none}}
+.sx{padding:80px 0 30px}.sx h2{font-size:2.1rem;color:var(--gl);text-align:center}.sbt{text-align:center;color:var(--mu);margin:6px 0 34px}
+.sg{display:grid;grid-template-columns:repeat(6,1fr);gap:22px}.sc:nth-child(-n+3){grid-column:span 2}.sc:nth-child(n+4){grid-column:span 3}
+.sc{display:flex;flex-direction:column;background:var(--cd);border:1px solid var(--ln);border-radius:18px;overflow:hidden;text-decoration:none;color:inherit;transition:.3s}
+.sc:hover{border-color:var(--gd);transform:translateY(-5px);box-shadow:0 20px 44px rgba(0,0,0,.55),0 0 34px rgba(212,175,55,.14)}
+.si{position:relative;aspect-ratio:16/9;overflow:hidden}.si img{width:100%;height:100%;object-fit:cover;display:block;transition:.5s}.sc:hover .si img{transform:scale(1.06)}
+.si:after{content:"";position:absolute;inset:auto 0 0;height:55%;background:linear-gradient(transparent,var(--cd))}
+.si b{position:absolute;z-index:2;top:12px;inset-inline-start:16px;font:700 2.4rem "El Messiri",sans-serif;color:var(--gd);text-shadow:0 2px 14px #000}
+.sb{padding:4px 26px 24px}.sb h3{font-size:1.55rem;color:var(--gl);margin-bottom:6px}.sb p{margin:0 0 18px;color:var(--mu);font-size:.96rem}
+.sm{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--ln);padding-top:14px}.sm span{color:var(--mu);font-size:.86rem}.sm em{font-style:normal;color:var(--gd);font-weight:700}
+.pnl{position:fixed;inset:0;z-index:25;background:rgba(6,6,7,.97);overflow-y:auto;padding-top:env(safe-area-inset-top,0px);padding-bottom:50px}.pnl[hidden]{display:none}
+.pin{max-width:1100px;margin:auto;padding:0 20px}.pnl .sec{padding-top:10px}
+.cl{position:sticky;top:12px;z-index:3;display:block;margin:12px 0 0 auto;margin-inline-start:0;margin-inline-end:auto;background:var(--sf);color:var(--gl);border:1px solid var(--gd);border-radius:8px;padding:8px 18px;font:600 .92rem "Tajawal",sans-serif;cursor:pointer}
+@media(max-width:860px){.sg{grid-template-columns:1fr}.sc:nth-child(n){grid-column:auto}.sx h2{font-size:1.7rem}}
 </style>
 </head>
 <body>
@@ -91,20 +117,23 @@ footer{text-align:center;color:var(--mu);font-size:.82rem;padding:20px 0 90px;bo
 <div class="nl"><a href="#web">المواقع</a><a href="#apps">التطبيقات</a><a href="#auto">الأتمتة</a><a href="#data">البيانات</a><a href="#ps4">PS4</a><a href="#how">آلية العمل</a></div>
 <a class="wa nav-wa" href="https://wa.me/201026024266" target="_blank" rel="noopener">واتساب</a></div></nav>
 
-<header class="hero"><div class="w">
-<div class="orn">FLOWCRAFT · القاهرة</div>
-<h1>حلول تقنية متكاملة بمستوى يليق بنشاطك</h1>
-<p>مكتب متخصص في المواقع الاحترافية، وأتمتة الأعمال والبوتات الذكية، وتطوير التطبيقات، وتحليل البيانات، وخدمات أجهزة PlayStation 4.</p>
-<a class="wa" href="https://wa.me/201026024266" target="_blank" rel="noopener">تواصل معنا على واتساب</a>
-<div class="sv">
-<a href="#web"><b>01</b><h3>مواقع احترافية</h3><span>متجاوبة وبتصميم راقٍ</span></a>
-<a href="#apps"><b>02</b><h3>تطوير التطبيقات</h3><span>موبايل وويب وسطح مكتب</span></a>
-<a href="#auto"><b>03</b><h3>الأتمتة والبوتات</h3><span>n8n وتيليجرام وذكاء اصطناعي</span></a>
-<a href="#data"><b>04</b><h3>تحليل البيانات</h3><span>مؤشرات وتقارير وتوصيات</span></a>
-<a href="#ps4"><b>05</b><h3>خدمات PS4</h3><span>تعديل وتحميل ألعاب</span></a>
-</div></div></header>
+<header class="hero"><div class="w"><div class="hg"><div class="ht">
+<div class="orn">FLOWCRAFT · مكتب الحلول التقنية</div>
+<h1>موقع احترافي، أتمتة، وبوتات ذكية<br><span>لنشاطك… في مكان واحد.</span></h1>
+<p>نصمّم مواقع متجاوبة، ونبني أنظمة أتمتة وبوتات تيليجرام، ونطوّر التطبيقات، ونحلّل بيانات نشاطك، ونقدّم خدمات PS4. نفّذنا أكتر من 16 مشروع لمطاعم ومكاتب قانونية ومعارض سيارات وشركات.</p>
+<div class="bt"><a class="wa" href="https://wa.me/201026024266" target="_blank" rel="noopener">اطلب عرض سعر على واتساب</a><a class="gh" href="#web">شاهد أعمالنا</a></div>
+<div class="tr"><div><b>16+</b><span>مشروع منفّذ</span></div><div><b>24/7</b><span>أنظمة بلا توقف</span></div><div><b>5</b><span>تخصصات</span></div></div>
+</div><div class="vis"><i class="gl"></i>
+<img class="vi v1" data-img="excel" alt="لوحة تحليل بيانات المطعم">
+<img class="vi v2" data-img="bi2" alt="تحليل بيانات ضخمة">
+<img class="vi v3" data-img="bot" alt="بوت تيليجرام لإدارة الطلبات">
+<img class="vi v4" data-img="qad" alt="تطبيق قضيتي">
+<div class="bd b1">● النظام يعمل الآن</div><div class="bd b2">طلب جديد وصل ✓</div>
+</div></div>
+</div></header>
 
-<main class="w" id="root"></main>
+<section class="sx" id="services"><div class="w"><h2>اختر الخدمة التي تحتاجها</h2><p class="sbt">اضغط على أي خدمة لتشاهد مشاريعنا فيها بالتفصيل.</p><div class="sg" id="sg"></div></div></section>
+<div class="pnl" id="pnl" hidden><div class="pin"><button class="cl" type="button">✕ إغلاق</button><div id="pbody"></div></div></div>
 
 <div class="w how" id="how">
 <div class="hd" style="margin-bottom:0"><div class="n">06</div><div><h2>كيف نعمل معك</h2><p>أربع خطوات واضحة من أول رسالة حتى التسليم.</p></div></div>
@@ -163,15 +192,22 @@ var D=[
 {t:"باقة الألعاب",s:"تحميل وتثبيت أي لعبة تطلبها.",g:["تحميل","تثبيت"],d:[["الخدمة","تحميل وتثبيت باقة الألعاب المتاحة حسب طلبك."],["الطلب","اكتب لنا اسم اللعبة على واتساب."]]}]}
 ];
 var h="";
-D.forEach(function(s){
-h+='<section class="sec" id="'+s.id+'"><div class="hd"><div class="n">'+s.n+'</div><div><h2>'+s.t+'</h2><p>'+s.s+'</p></div>'+(s.c?'<div class="art"><img alt="'+s.t+'" src="'+IMG[s.c]+'"></div>':'')+'</div><div class="grid">';
+var SEC={};D.forEach(function(s){
+h="";h+='<section class="sec" id="'+s.id+'"><div class="hd"><div class="n">'+s.n+'</div><div><h2>'+s.t+'</h2><p>'+s.s+'</p></div>'+(s.c?'<div class="art"><img alt="'+s.t+'" src="'+IMG[s.c]+'"></div>':'')+'</div><div class="grid">';
 s.p.forEach(function(p){
 var m=encodeURIComponent("مرحبًا FlowCraft، أريد خدمة مثل: "+p.t);
 h+='<article class="pc">'+(p.i?'<img class="pi" loading="lazy" alt="'+p.t.replace(/"/g,"")+'" src="'+IMG[p.i]+'">':'')+'<h3>'+p.t+'</h3><p>'+p.s+'</p><div class="tg">'+p.g.map(function(x){return"<i>"+x+"</i>"}).join("")+'</div><details><summary>تفاصيل المشروع</summary><ul class="dt">'+p.d.map(function(x){return"<li><b>"+x[0]+":</b>"+x[1]+"</li>"}).join("")+'</ul><a class="ask" href="https://wa.me/201026024266?text='+m+'" target="_blank" rel="noopener">اطلب مثله على واتساب</a></details></article>';
 });
-h+='</div></section>';
+h+='</div></section>';SEC[s.id]=h;
 });
-document.getElementById("root").innerHTML=h;
+var COV={web:"vibe",apps:"qad",auto:"bot",data:"bi2",ps4:"ps4"};
+document.getElementById("sg").innerHTML=D.map(function(s){return '<a class="sc" href="#'+s.id+'"><div class="si"><img alt="'+s.t+'" src="'+IMG[COV[s.id]]+'"><b>'+s.n+'</b></div><div class="sb"><h3>'+s.t+'</h3><p>'+s.s+'</p><div class="sm"><span>'+s.p.length+' مشاريع</span><em>عرض المشاريع ←</em></div></div></a>'}).join("");
+var pn=document.getElementById("pnl"),pb=document.getElementById("pbody");
+function route(){var id=location.hash.slice(1);if(SEC[id]){pb.innerHTML=SEC[id];pn.hidden=false;pn.scrollTop=0;document.documentElement.style.overflow="hidden"}else{pn.hidden=true;document.documentElement.style.overflow=""}}
+pn.addEventListener("click",function(e){if(e.target===pn||e.target.classList.contains("cl"))location.hash=""});
+document.addEventListener("keydown",function(e){if(e.key==="Escape"&&!pn.hidden)location.hash=""});
+window.addEventListener("hashchange",route);route();
+document.querySelectorAll("img[data-img]").forEach(function(e){e.src=IMG[e.getAttribute("data-img")]});
 (function(){var tpl=document.getElementById("intro").outerHTML;var t;function play(){var o=document.getElementById("intro");if(o)o.remove();document.body.insertAdjacentHTML("afterbegin",tpl);var i=document.getElementById("intro");var d=function(){clearTimeout(t);i.classList.add("skip");document.documentElement.style.overflow=""};document.documentElement.style.overflow="hidden";i.addEventListener("click",d);t=setTimeout(d,4200)}play();var l=document.querySelector(".lg");l.style.cursor="pointer";l.addEventListener("click",play)})();
 </script>
 </body>
